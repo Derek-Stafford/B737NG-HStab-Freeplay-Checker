@@ -3,19 +3,19 @@ D2 = #
 D3 = #
 x = D3*1.25+(((D1+D2)/2))
 print (D1, D2, D3, x)
-if D1 > 0.066:
-  print("Failed")
+if D1 > 0.66: 
+  print ("Failed:" + " " + f"D1 exceeds the 0.066 in. limit")
 else:
-  print ("Passed")
+  print("Passed")
 if D2 > 0.066:
-  print ("Failed")
+  print("Failed:" + " " + f"D2 exceeds the 0.066 in. limit")
 else:
-  print ("Passed")
+  print("Passed")
 if D3 > 0.065:
-  print ("Failed")
+  print ("Failed:" + " " + f"D3 exceeds the 0.065 in. limit")
 else:
-  print ("Passed")
+  print("Passed")
 if x > 0.075:
-  print ("Failed")
+  print ("Failed:" + " " + f"x exceeds the 0.075 in. limit")
 else:
   print("Passed")
