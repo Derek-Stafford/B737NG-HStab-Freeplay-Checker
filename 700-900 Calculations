@@ -13,7 +13,7 @@ print (D3)
 print (x)
 print (y)
 print (h)
-if D1 > 0.66: 
+if D1 > 0.066: 
   print ("Failed:" + " " + f"D1 exceeds the 0.066 in. limit")
 else:
   print("Passed")
