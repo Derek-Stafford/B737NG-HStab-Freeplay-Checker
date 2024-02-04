@@ -6,7 +6,7 @@ D2 = user_input2
 D3 = user_input3
 x = D3*1.25
 y = (D1+D2)/2
-H = D3*1.25+(((D1+D2)/2))
+H = 1.25*D3+[((D1+D2)/2)]
 print (x)
 print (y)
 print (h)
