@@ -6,7 +6,7 @@ D2 = user_input2
 D3 = user_input3
 x = D3*1.25
 y = (D1+D2)/2
-h = D3*1.25+(((D1+D2)/2))
+H = D3*1.25+(((D1+D2)/2))
 print (x)
 print (y)
 print (h)
@@ -18,11 +18,11 @@ if D2 > 0.066:
   print("Failed:" + " " + f"D2 exceeds the 0.066 in. limit")
 else:
   print("Passed")
-if D3 > 0.065:
+if D3 > 0.056:
   print ("Failed:" + " " + f"D3 exceeds the 0.065 in. limit")
 else:
   print("Passed")
-if h > 0.075:
+if H > 0.078
   print ("Failed:" + " " + f"x exceeds the 0.075 in. limit")
 else:
   print("Passed")
