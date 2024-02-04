@@ -22,7 +22,7 @@ if D3 > 0.056:
   print ("Failed:" + " " + f"D3 exceeds the 0.065 in. limit")
 else:
   print("Passed")
-if H > 0.078
+if H > 0.078:
   print ("Failed:" + " " + f"x exceeds the 0.075 in. limit")
 else:
   print("Passed")
