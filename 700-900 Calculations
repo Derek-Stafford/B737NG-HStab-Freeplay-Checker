@@ -4,7 +4,7 @@ user_input3 = float(input("Enter a value: "))
 D1 = user_input1
 D2 = user_input2
 D3 = user_input3
-x = D3*1.25
+x = 1.25*D3
 y = (D1+D2)/2
 H = 1.25*D3+((D1+D2)/2)
 print (x)
@@ -23,6 +23,6 @@ if D3 > 0.056:
 else:
   print("Passed")
 if H > 0.078:
-  print ("Failed:" + " " + f"x exceeds the 0.075 in. limit")
+  print ("Failed:" + " " + f"H exceeds the 0.075 in. limit")
 else:
   print("Passed")
