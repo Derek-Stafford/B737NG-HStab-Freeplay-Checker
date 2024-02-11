@@ -1,3 +1,3 @@
 # B737-7-8-9-Horizontal-Stab-Check
-A python-based code that I wrote to calculate the freeplay values of Boeing 737NG aircraft. This was really more of a practice to become more familiar with calculation based coding. All variables and formulas, except for the x and y variables, are dervied from the appropriate AMM/Routine Maintenance Task Card. 
+A python-based code that I wrote to calculate the freeplay values of Boeing 737NG aircraft. All variables and formulas, except for the x and y variables, are dervied from the appropriate AMM/Routine Maintenance Task Card. 
 https://replit.com/@Warden-Boulder/B737-HStab-Freeplay-Calculator#main.py
