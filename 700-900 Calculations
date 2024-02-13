@@ -11,18 +11,18 @@ print (x)
 print (y)
 print (H)
 if D1 > 0.066: 
-  print ("Failed:" + " " + f"D1 exceeds the 0.066 in. limit at {D1} in.")
+  print ("Failed:" + " " + f"D1 exceeds the 0.066 in. limit")
 else:
   print("Passed")
 if D2 > 0.066:
-  print("Failed:" + " " + f"D2 exceeds the 0.066 in. limit at {D2} in.")
+  print("Failed:" + " " + f"D2 exceeds the 0.066 in. limit")
 else:
   print("Passed")
 if D3 > 0.056:
-  print ("Failed:" + " " + f"D3 exceeds the 0.065 in. limit at {D3} in.")
+  print ("Failed:" + " " + f"D3 exceeds the 0.065 in. limit")
 else:
   print("Passed")
 if H > 0.078:
-  print ("Failed:" + " " + f"H exceeds the 0.075 in. limit at {H} in."
+  print ("Failed:" + " " + f"H exceeds the 0.075 in. limit")
 else:
   print("Passed")
