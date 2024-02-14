@@ -1,9 +1,6 @@
-user_input1 = float(input("Enter a value: "))
-user_input2 = float(input("Enter a vaule: "))
-user_input3 = float(input("Enter a value: "))
-D1 = user_input1
-D2 = user_input2
-D3 = user_input3
+D1 = float(input("D1 = "))
+D2 = float(input("D2 = "))
+D3 = float(input("D3 = "))
 x = 1.25*D3
 y = (D1+D2)/2
 H = 1.25*D3+((D1+D2)/2)
@@ -12,17 +9,14 @@ print ("(D1+D2)/2 =", y)
 print ("H =", H)
 if D1 > 0.066: 
   print ("D1 Failed:" + " "+ "D1 exceeds 0.066")
-  print("D1 =", D1)
 else:
   print("D1 Passed")
 if D2 > 0.066:
   print("D2 Failed:" + " " + "D2 exceeds 0.066")
-  print ("D2 =", D2)
 else:
   print("D2 Passed")
 if D3 > 0.056: 
   print ("D3 Failed:" + " " + "D3 exceeds 0.056")
-  print("D3 =", D3)
 else:
   print("D3 Passed")
 if H > 0.078: 
