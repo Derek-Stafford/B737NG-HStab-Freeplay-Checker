@@ -7,22 +7,25 @@ D3 = user_input3
 x = 1.25*D3
 y = (D1+D2)/2
 H = 1.25*D3+((D1+D2)/2)
-print (x)
-print (y)
-print (H)
+print("1.25*D3 = ", x) 
+print ("(D1+D2)/2 =", y)
+print ("H =", H)
 if D1 > 0.066: 
-  print ("Failed:" + " " + f"D1 exceeds the 0.066 in. limit")
+  print ("D1 Failed:" + " "+ "D1 exceeds 0.066")
+  print("D1 =", D1)
 else:
-  print("Passed")
+  print("D1 Passed")
 if D2 > 0.066:
-  print("Failed:" + " " + f"D2 exceeds the 0.066 in. limit")
+  print("D2 Failed:" + " " + "D2 exceeds 0.066")
+  print ("D2 =", D2)
 else:
-  print("Passed")
-if D3 > 0.056:
-  print ("Failed:" + " " + f"D3 exceeds the 0.065 in. limit")
+  print("D2 Passed")
+if D3 > 0.056: 
+  print ("D3 Failed:" + " " + "D3 exceeds 0.056")
+  print("D3 =", D3)
 else:
-  print("Passed")
-if H > 0.078:
-  print ("Failed:" + " " + f"H exceeds the 0.075 in. limit")
+  print("D3 Passed")
+if H > 0.078: 
+  print ("H Failed:" + " " + "H exceeds 0.078")
 else:
-  print("Passed")
+  print("H Passed")
