@@ -1,0 +1,44 @@
+D1 = float(input("D1 = "))
+D2 = float(input("D2 = "))
+D3 = float(input("D3 = "))
+Weight = float(input("Weight = "))
+X = D1-(Weight*0.0000155)
+Y = D2-(Weight*0.0000155)
+Z = (D3*1.25)-(Weight*0.0000318)
+H = Z+((X+Y)/2)
+if X < 0:
+  X = 0
+  print("X = ", X)
+  print("Double check the D1 value, otherwise X passed")
+elif X > 0.060:
+  print("X = ", X)
+  print("X Failed: " + " " + "X excceds 0.060")
+else:
+  print("X = ", X)
+  print ("X Passed")
+if Y < 0:
+  Y = 0
+  print("Y =", Y)
+  print("Double check the D2 value, otherwise Y passed")
+elif Y  > 0.060:
+  print("Y = ", Y)
+  print("Y Failed: " + " " + "Y excceds 0.060")
+else:
+  print("Y = ", Y)
+  print("Y Passed")
+if Z < 0:
+  Z = 0
+  print("Z = ", Z)
+  print("Double check the D3 value, otherwise Z passed")
+elif Z > 0.050:
+  print("Z = ", Z)
+  print("Z Failed: " + " " + "Z excceds 0.050")
+else:
+  print("Z = ", Z)
+  print ("Z Passed")
+if H > 0.051:
+  print("H = ", H)
+  print("H Failed: " + " " + "H excceds 0.051")
+else:
+  print("H = ", H)
+  print ("H Passed")
