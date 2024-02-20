@@ -4,9 +4,9 @@ D3 = float(input("D3 = "))
 x = 1.25*D3
 y = (D1+D2)/2
 H = 1.25*D3+((D1+D2)/2)
-print("1.25*D3 = ", x) 
-print ("(D1+D2)/2 =", y)
-print ("H =", H)
+print("1.25*D3 = ", round(x,4))
+print ("(D1+D2)/2 =", round(y,4))
+print ("H =", round(H,4))
 if D1 > 0.066: 
   print ("D1 Failed:" + " "+ "D1 exceeds 0.066")
 else:
