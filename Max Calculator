@@ -9,36 +9,36 @@ H = Z+((X+Y)/2)
 if X < 0:
   X = 0
   print("X = ", X)
-  print("Double check the D1 value, otherwise X passed")
+  print("Double check the D1 and Weight values, otherwise X passed")
 elif X > 0.060:
-  print("X = ", round(X,4))
+  print("X = ", f"{X:.3f}")
   print("X Failed: " + " " + "X excceds 0.060")
 else:
-  print("X = ", round(X,4))
+  print("X = ", f"{X:.3f}")
   print ("X Passed")
 if Y < 0:
   Y = 0
-  print("Y = ", Y)
-  print("Double check the D2 value, otherwise Y passed")
+  print("Y =", Y)
+  print("Double check the D2 and Weight values, otherwise Y passed")
 elif Y  > 0.060:
-  print("Y = ", round(Y,4))
+  print("Y = ", f"{Y:.3f}")
   print("Y Failed: " + " " + "Y excceds 0.060")
 else:
-  print("Y = ", round(Y,4))
+  print("Y = ", f"{Y:.3f}")
   print("Y Passed")
 if Z < 0:
   Z = 0
   print("Z = ", Z)
-  print("Double check the D3 value, otherwise Z passed")
+  print("Double check the D3 and Weight values, otherwise Z passed")
 elif Z > 0.050:
-  print("Z = ", round(Z,4))
+  print("Z = ", f"{Z:.3f}") 
   print("Z Failed: " + " " + "Z excceds 0.050")
 else:
-  print("Z = ", round(Z,4))
+  print("Z = ", f"{Z:.3f}")
   print ("Z Passed")
 if H > 0.051:
-  print("H = ", round(H,4))
+  print("H = ", f"{H:.3f}")
   print("H Failed: " + " " + "H excceds 0.051")
 else:
-  print("H = ", round(H,4))
+  print("H = ", f"{H:.3f}")
   print ("H Passed")
