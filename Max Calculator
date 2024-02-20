@@ -18,7 +18,7 @@ else:
   print ("X Passed")
 if Y < 0:
   Y = 0
-  print("Y =", Y)
+  print("Y = ", Y)
   print("Double check the D2 value, otherwise Y passed")
 elif Y  > 0.060:
   print("Y = ", round(Y,4))
