@@ -4,7 +4,7 @@ D3 = float(input("D3 = "))
 x = 1.25*D3
 y = (D1+D2)/2
 H = 1.25*D3+((D1+D2)/2)
-print("1.25*D3 = ", f"{x:.3f}")
+print("1.25*D3 = ", f"{x:.4f}")
 print ("(D1+D2)/2 = ", y)
 print ("H = ", H)
 if D1 > 0.066: 
