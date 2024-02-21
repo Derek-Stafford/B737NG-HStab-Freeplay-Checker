@@ -11,34 +11,34 @@ if X < 0:
   print("X = ", X)
   print("Double check the D1 value, otherwise X passed")
 elif X > 0.060:
-  print("X = ", f"{X:.3f}")
+  print("X = ", f"{X:.4f}")
   print("X Failed: " + " " + "X excceds 0.060")
 else:
-  print("X = ", f"{X:.3f}")
+  print("X = ", f"{X:.4f}")
   print ("X Passed")
 if Y < 0:
   Y = 0
   print("Y = ", Y)
   print("Double check the D2 value, otherwise Y passed")
 elif Y  > 0.060:
-  print("Y = ", f"{Y:.3f}")
+  print("Y = ", f"{Y:.4f}")
   print("Y Failed: " + " " + "Y excceds 0.060")
 else:
-  print("Y = ", f"{Y:.3f}")
+  print("Y = ", f"{Y:.4f}")
   print("Y Passed")
 if Z < 0:
   Z = 0
   print("Z = ", Z)
   print("Double check the D3 value, otherwise Z passed")
 elif Z > 0.050:
-  print("Z = ", f"{Z:.3f}") 
+  print("Z = ", f"{Z:.4f}") 
   print("Z Failed: " + " " + "Z excceds 0.050")
 else:
-  print("Z = ", f"{Z:.3f}")
+  print("Z = ", f"{Z:.4f}")
   print ("Z Passed")
 if H > 0.051:
-  print("H = ", f"{H:.3f}")
+  print("H = ", f"{H:.4f}")
   print("H Failed: " + " " + "H excceds 0.051")
 else:
-  print("H = ", f"{H:.3f}")
+  print("H = ", f"{H:.4f}")
   print ("H Passed")
