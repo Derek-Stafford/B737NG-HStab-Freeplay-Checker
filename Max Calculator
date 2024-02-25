@@ -5,7 +5,7 @@ def check_value(name, value, threshold):
         print(f"Double check the {name} value, otherwise {name} passed")
     elif value > threshold:
         print(f"{name} = {value:.4f}")
-        print(f"{name} Failed: {name} exceeds {threshold:.4f}")
+        print(f"{name} Failed: {name} exceeds {threshold}")
     else:
         print(f"{name} = {value:.4f}")
         print(f"{name} Passed")
