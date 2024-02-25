@@ -1,6 +1,6 @@
 def check_value(name, value, threshold):
   if value > threshold:
-      print(f"{name} Failed: {name} exceeds {threshold:.4f}")
+      print(f"{name} Failed: {name} exceeds {threshold}")
   else:
       print(f"{name} Passed")
 D1 = float(input("D1 = "))
