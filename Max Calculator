@@ -1,22 +1,31 @@
+def ensure_non_negative(value): 
+  if value < 0:
+      return 0
+  else:
+      return value
+
 def check_value(name, value, threshold):
-    if value < 0:
-        value = 0
-        print(f"{name} = {value}")
-        print(f"Double check the {name} value, otherwise {name} passed")
-    elif value > threshold:
-        print(f"{name} = {value:.4f}")
-        print(f"{name} Failed: {name} exceeds {threshold}")
-    else:
-        print(f"{name} = {value:.4f}")
-        print(f"{name} Passed")
+ if value == 0:
+  print(f"{name} = 0")
+  print(f"Double check the {name} value, otherwise {name} passes")
+ elif value > threshold:
+    print(f"{name} = {value:.4f}")
+    print(f"{name} Failed: {name} exceeds the {threshold} value")
+ else:
+      print(f"{name} = {value:.4f}")
+      print(f"{name} Passed")
+
 D1 = float(input("D1 = "))
 D2 = float(input("D2 = "))
 D3 = float(input("D3 = "))
 Weight = float(input("Weight = "))
-X = D1 - (Weight * 0.0000155)
-Y = D2 - (Weight * 0.0000155)
-Z = (D3 * 1.25) - (Weight * 0.0000318)
+W = Weight
+
+X = ensure_non_negative(D1 - (W * 0.0000155))
+Y = ensure_non_negative(D2 - (W * 0.0000155))
+Z = ensure_non_negative( (D3 * 1.25) - (W * 0.0000318))
 H = Z + ((X + Y) / 2)
+
 check_value("X", X, 0.060)
 check_value("Y", Y, 0.060)
 check_value("Z", Z, 0.050)
