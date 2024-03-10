@@ -1,17 +1,26 @@
+# Input Values
+D1 = float(input("D1 = "))
+D2 = float(input("D2 = "))
+D3 = float(input("D3 = "))
+
+# Calculations
+x = 1.25*D3
+y = (D1+D2)/2
+H = 1.25*D3+((D1+D2)/2)
+
+# Output Values
+print(f"1.25*D3 = {x:.4f}")
+print(f"(D1+D2)/2 = {y:.4f}")
+print(f"H = {H:.4f}")
+
+# Threshold Messages
 def check_value(name, value, threshold):
   if value > threshold:
       print(f"{name} Failed: {name} exceeds {threshold}")
   else:
       print(f"{name} Passed")
-D1 = float(input("D1 = "))
-D2 = float(input("D2 = "))
-D3 = float(input("D3 = "))
-x = 1.25*D3
-y = (D1+D2)/2
-H = 1.25*D3+((D1+D2)/2)
-print(f"1.25*D3 = {x:.4f}")
-print(f"(D1+D2)/2 = {y:.4f}")
-print(f"H = {H:.4f}")
+    
+# Check Values against Threshold Conditions
 check_value("D1", D1, 0.066)
 check_value("D2", D2, 0.066)
 check_value("D3", D3, 0.056)
