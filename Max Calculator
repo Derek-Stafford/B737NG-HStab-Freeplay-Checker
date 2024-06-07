@@ -3,7 +3,6 @@ D1 = float(input("D1 = "))
 D2 = float(input("D2 = "))
 D3 = float(input("D3 = "))
 Weight = float(input("Weight = "))
-W = Weight
 
 # Checks to see if X, Y, or Z is negative
 def negative_check(value): 
@@ -25,9 +24,9 @@ def check_value(name, value, threshold):
       print(f"{name} Passed")
 
 # Calculations
-X = negative_check(D1 - (W * 0.0000155))
-Y = negative_check(D2 - (W * 0.0000155))
-Z = negative_check((D3 * 1.25) - (W* 0.0000318))
+X = negative_check(D1 - (Weight * 0.0000155))
+Y = negative_check(D2 - (Weight * 0.0000155))
+Z = negative_check((D3 * 1.25) - (Weight * 0.0000318))
 H = Z + ((X + Y) / 2)
 
 # Threshold Checks
