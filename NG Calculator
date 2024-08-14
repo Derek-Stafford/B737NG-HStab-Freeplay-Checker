@@ -6,7 +6,7 @@ D3 = float(input("D3 = "))
 # Calculations
 x = 1.25*D3
 y = (D1+D2)/2
-H = 1.25*D3+((D1+D2)/2)
+H = (1.25*D3)+((D1+D2)/2)
 
 # Output Values
 # The x and y variables here are unnecessary, but are included to see what those values are when isolated from the overall equation.
