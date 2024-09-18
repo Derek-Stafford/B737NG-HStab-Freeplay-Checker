@@ -6,9 +6,9 @@ italic = '\033[3m'
 red = '\033[31m'
 
 # Input Values
-D1 = float(input(italic+"D1 = "+end))
-D2 = float(input(italic+"D2 = "+end))
-D3 = float(input(italic+"D3 = "+end))
+D1 = float(input(italic+bold+"D1 = "+end))
+D2 = float(input(italic+bold+"D2 = "+end))
+D3 = float(input(italic+bold+"D3 = "+end))
 
 # Calculations
 # x = 1.25*D3
