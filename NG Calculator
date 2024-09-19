@@ -10,15 +10,10 @@ D1 = float(input(italic+bold+"D1 = "+end))
 D2 = float(input(italic+bold+"D2 = "+end))
 D3 = float(input(italic+bold+"D3 = "+end))
 
-# Calculations
-# x = 1.25*D3
-# y = (D1+D2)/2
+# Calculation
 H = (1.25*D3)+((D1+D2)/2)
 
-# Output Values
-# The x and y variables here are unnecessary, but are included to see what those values are when isolated from the overall equation.
-# print(f"1.25*D3 = {x:.4f}")
-# print(f"(D1+D2)/2 = {y:.4f}")
+# Output Value
 print(italic+bold+f"H = {H:.4f}"+end)
 
 # Threshold Messages
