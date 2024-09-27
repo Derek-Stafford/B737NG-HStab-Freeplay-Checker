@@ -11,24 +11,13 @@ red = '\033[31m'
 D1 = float(input(italic+bold+"D1 = "+end))
 D2 = float(input(italic+bold+"D2 = "+end))
 D3 = float(input(italic+bold+"D3 = "+end))
-variables = [
-	["D1", 0.066], 
-	["D2", 0.066],
-	["D3", 0.056],
-	["H", 0.078]
-]
-header= ["Variables","Threshold"]
-print (tabulate(variables,headers =header,tablefmt="grid"))
-# Calculation
+# Calculating the total freeplay then storing and displaying the reault inside a table
 H = (1.25*D3)+((D1+D2)/2)
-
 equation = [
-		["H = (1.25*D3)+((D1 + D2)/2)", H]
+		["H = (1.25*D3)+((D1 + D2)/2)",H]
 ]
-header_2 = ["Input", "Output"]
-print(tabulate(equation, headers=header_2, tablefmt="grid"))
-
-
+head_1 = ["Formula", "Result"]
+print(tabulate(equation, headers=head_1, tablefmt="grid"))
 
 # Threshold Messages
 def check_value(name, value, threshold):
@@ -37,16 +26,14 @@ def check_value(name, value, threshold):
 		else:
 				return italic+green+f"{name} Passed"+end
 
-# Check Values against Threshold Conditions
-header_3 = ["Variable Name", "Ouput", "Result"]
+# Check Values against Threshold Conditions, then storing and displaying the results inside a table
+head_2 = ["Var","Ouput", "Limit", "Result"]
 
-# Instead of printing the results, we store them in a list for tabulate
 results = [
-		["D1", f"{D1:.4f}", check_value("D1", D1, 0.066)],
-		["D2", f"{D2:.4f}", check_value("D2", D2, 0.066)],
-		["D3", f"{D3:.4f}", check_value("D3", D3, 0.056)],
-		["H", f"{H:.4f}", check_value("H", H, 0.078)]
+		["D1", f"{D1:.4f}", 0.066, check_value("D1", D1, 0.066)],
+		["D2", f"{D2:.4f}", 0.066, check_value("D2", D2, 0.066)],
+		["D3", f"{D3:.4f}", 0.056, check_value("D3", D3, 0.056)],
+		["H", f"{H:.4f}", 0.078, check_value("H", H, 0.078)]
 ]
 
-# Display the results in a table
-print(tabulate(results, headers=header_3, tablefmt="grid"))
+print(tabulate(results, headers=head_2, tablefmt="grid"))
