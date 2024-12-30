@@ -6,38 +6,37 @@ italic = '\033[3m'
 red = '\033[31m'
 
 # Input Values
-D1 = float(input(bold + italic + "D1 = " + end))
-D2 = float(input(bold + italic + "D2 = " + end))
-D3 = float(input(bold + italic + "D3 = " + end))
+D1 = float(input(bold+italic+"D1 = "+end))
+D2 = float(input(bold+italic+"D2 = "+end))
+D3 = float(input(bold+italic+"D3 = "+end))
 
 # Pass/Fail Storage
-Fail = 0
-results = [] 
+Fail_Count = 0
+Results = [] 
 
 # Calculations
 H = (1.25 * D3) + ((D1 + D2) / 2)
-print(bold + italic + f"H = {H:.4f}" + end)
+print(bold+italic+f"H = {H:.4f}"+end)
 
 # Threshold Messages, Checks, Storage
 def check_value(name, value, threshold):
-		global Fail
-		if value > threshold:
-				Fail += 1
-				results.append(bold + italic + red + f"{name} Failed" + end)
-		else:
-				results.append(bold + italic + green + f"{name} Passed" + end)
-
-# Check Values against Threshold Conditions
+  global Fail_Count
+  if value > threshold:
+    Fail_Count += 1
+    Results.append(bold+italic + red + f"{name} Failed"+end)
+  else:
+    Results.append(bold+italic+ green +f"{name} Passed"+end)
+# Check Values against Threshold Conditins                 
 check_value("D1", D1, 0.066)
 check_value("D2", D2, 0.066)
 check_value("D3", D3, 0.056)
 check_value("H", H, 0.078)
 
-# Summary of Results
-if Fail == 4:
-		print(bold + italic + red + "All values failed" + end)
-elif Fail == 0:
-		print(bold + italic + green + "All values passed" + end)
+# Summary of Results                  
+if Fail_Count == 0:
+  print(bold+italic+green+"All values passed"+end)
+elif Fail_Count == 4: 
+  print(bold+italic+red+"All values failed"+end)
 else:
-		for result in results:
-				print(result)
+  for Result in Results:
+    print(Result)
