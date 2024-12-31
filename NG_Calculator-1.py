@@ -24,7 +24,7 @@ def check_value(name, value, threshold):
   global Pass, Fail
   if value > threshold:
     Fail_Count += 1
-    Results.append(bold+italic + red + f"{name} Failed"+end)
+    Results.append(bold+italic+red+ f"{name} Failed"+end)
   else:
     Pass += 1
     Results.append(bold+italic+ green +f"{name} Passed"+end)
