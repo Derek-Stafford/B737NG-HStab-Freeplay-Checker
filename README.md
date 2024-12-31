@@ -1,4 +1,5 @@
 *Note: 
+
 • Calculator 1: A bit more simple and basic
 • Calculator 2: Adds better structuring with the help of dictionaris
 • Calculator 3: The most complex of the three and makes use of tables
