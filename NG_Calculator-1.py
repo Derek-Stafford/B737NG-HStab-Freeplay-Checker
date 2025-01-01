@@ -23,11 +23,11 @@ print(bold+italic+f"H = {H:.4f}"+end)
 def check_value(name, value, threshold):
   global Pass, Fail
   if value > threshold:
-    Fail_Count += 1
+    Fail += 1
     Results.append(bold+italic+red+ f"{name} Failed"+end)
   else:
     Pass += 1
-    Results.append(bold+italic+ green +f"{name} Passed"+end)
+    Results.append(bold+italic+green +f"{name} Passed"+end)
 # Check Values against Threshold Conditins                 
 check_value("D1", D1, 0.066)
 check_value("D2", D2, 0.066)
